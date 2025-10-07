@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swapnarani Pradhan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container fade-in">
+      <h1>Swapnarani Pradhan</h1>
+      <p class="tagline">Computer Application Student</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about" class="section fade-in">
+    <div class="container about-container">
+      <div class="about-image">
+        <!-- 👇 Replace this with your photo (save it as profile.jpg in same folder) -->
+        <img src="portfolio.jpg" alt="Swapnarani Pradhan">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm <strong>Swapnarani Pradhan</strong>, a passionate Computer Science student with a strong interest in web development, problem-solving, and technology innovation. 
+          I enjoy building creative projects that make everyday tasks easier and learning new tools to expand my technical skills.
+        </p>
+        <a href="swapna.swapna.pdf" class="btn" download>📄 Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>API Integration</li>
+        <li>UI Design (Figma/Canva)</li>
+      </ul>
+    </div>
+  </section>
+
+<section id="experience" class="section fade-in">
+  <div class="container">
+    <h2>Internship Experience</h2>
+    <div class="experience-card">
+      <h3>Artificial Intelligence Intern — CodSoft</h3>
+      <p><strong>Duration:</strong>  June 01, 2025 – June 30, 2025 (1 month)</p>
+      <p>
+        During my internship at <strong>CodSoft</strong>, I worked on backend development using <strong>Python</strong>. 
+        I contributed to building automated scripts, optimizing code performance, and enhance user interfaces for better performance and usability.
+        This experience enhanced my problem-solving and debugging skills while working in a real-time project environment.
+      </p>
+      <ul>
+        <li>Developed backend logic and automation scripts using Python.</li>
+        <li>Worked with APIs and handled JSON data for integration tasks.</li>
+        <li>Improved performance and accuracy of existing Python modules.</li>
+        <li>Collaborated with senior developers using Git for version control.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Weather App</h3>
+          <p>A real-time weather forecasting app using HTML, CSS, and JavaScript integrated with OpenWeather API.</p>
+        </div>
+        <div class="project-card">
+          <h3>AI Study Assistant</h3>
+          <p>An AI-powered tool that helps students organize notes and create smart flashcards using NLP.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:pswapnarani8@gmail.com">pswapnarani8@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/swapnarani-pradhan-aa62a1324" target="_blank">linkedin.com/in/swapnarani-pradhan</a></p>
+      <p>GitHub: <a href="https://github.com/swapna-stack" target="_blank">github.com/swapna-stack</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Swapnarani Pradhan | Portfolio</p>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const fadeEls = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      fadeEls.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // Smooth scroll behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
